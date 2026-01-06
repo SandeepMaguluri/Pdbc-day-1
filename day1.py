@@ -4,7 +4,7 @@ def connection1():
     return conc.connect(
         host="localhost",
         user="root",
-        password="M.S.SANdY1",
+        password="M.S.SA***",
         database="MYSQLPRAC"
     )
 print("connected successfully")
