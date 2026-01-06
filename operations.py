@@ -37,8 +37,12 @@ def update_emp():
 
 
 def del_emp():
-    idn=int(input("enter the emp Id to delete: "))
-    cur.execute("delete from PRACTISE where id=idn")
+    idn = int(input("Enter the emp ID to delete: "))
+    query = "DELETE FROM PRACTISE WHERE id = %s"
+    cur.execute(query, (idn))
     con.commit()
     con.close()
     print("="*5, "Successfully Deleted", "="*5)
+
+def exit_emp():
+    print("="*10, "Successfully Exited","="*10)
